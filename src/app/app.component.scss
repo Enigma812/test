@@ -14,3 +14,58 @@
         }
      }
 }
+
+.menu {
+    display: flex;
+    height: 30px;
+    background-color: #878787;
+
+    &__tool {
+        height: 30px;
+        width: 244;
+        background-color: rgb(167, 167, 167);
+    }
+}
+
+.btn-group .button__main {
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    margin-inline: 2px;
+    background-color: #878787;
+    cursor: pointer;
+}
+.btn-group .button__main:hover {
+    background-color: #04397D;
+}
+
+.btn-group .button__menubar {
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    background-color: #878787;
+    cursor: pointer;
+}
+.btn-group .button__menubar:hover {
+    background-color: #04397D;
+}
+.btn-group .button__bookmark {
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    margin-inline: 2px;
+    background-color: #878787;
+    cursor: pointer;
+}
+.btn-group .button__bookmark:hover {
+    background-color: #04397D;
+}
