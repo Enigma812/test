@@ -26,12 +26,16 @@
 
 <div class="menu">
   <div class="menu__tool">
-    <button class="button button-main">Главная</button>
+    <button class="button button-main"> {{ rus.home }} </button>
     <button class="button button-menubar">Меню</button>
     <button class="button button-bookmark">Закладка</button>
   </div>
   <div class="menu__language">
-    <button class="button-right button-rus"><img src="/assets/rus.png" height="20" width="30" alt="rus"></button>
-    <button class="button-right button-eng"><img src="/assets/eng.png" height="20" width="30" alt="eng"></button>
+    <button class="button-right button-rus">
+      <img src="/assets/rus.png" height="20" width="30" alt="rus">
+    </button>
+    <button class="button-right button-eng" (click)="rus.translate()">
+      <img src="/assets/eng.png" height="20" width="30" alt="eng">
+    </button>
   </div>
 </div>
