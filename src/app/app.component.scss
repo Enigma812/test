@@ -2,70 +2,65 @@
     border-bottom: 6px solid black;
     background-color: #04397D;
     height: 74px;
-    
+
     &__items {
         display: flex;
         height: 74px;
-        
+
         &__logo {
             height: 50px;
             align-self: center;
             margin-left: 15px;
         }
-     }
+    }
 }
 
 .menu {
     display: flex;
+    justify-content: space-between;
     height: 30px;
     background-color: #878787;
 
-    &__tool {
-        height: 30px;
-        width: 244;
-        background-color: rgb(167, 167, 167);
+    &__language {
+        display: flex;
+        justify-content: space-between;
+        height: 20px;
+        width: 63px;
+        align-self: center;
+        margin-right: 10px; 
+    } 
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+    border-style: none;
+    background-color: #878787;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d6d6d6;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: #04397D;
     }
 }
 
-.btn-group .button__main {
-    display: inline-block;
-    height: 30px;
-    width: 80px;
-    text-align: center;
-    border: 0;
-    padding: 0;
-    margin-inline: 2px;
-    background-color: #878787;
-    cursor: pointer;
-}
-.btn-group .button__main:hover {
-    background-color: #04397D;
+.button-main {
+    border-right: 2px solid #a3a2a2;
 }
 
-.btn-group .button__menubar {
-    display: inline-block;
-    height: 30px;
-    width: 80px;
-    text-align: center;
-    border: 0;
+.button-bookmark {
+    border-left: 2px solid #a3a2a2f5;
+}
+
+.button-right {
+    height: 20px;
+    width: 30px;
+    border-style: none;
     padding: 0;
-    background-color: #878787;
     cursor: pointer;
-}
-.btn-group .button__menubar:hover {
-    background-color: #04397D;
-}
-.btn-group .button__bookmark {
-    display: inline-block;
-    height: 30px;
-    width: 80px;
-    text-align: center;
-    border: 0;
-    padding: 0;
-    margin-inline: 2px;
-    background-color: #878787;
-    cursor: pointer;
-}
-.btn-group .button__bookmark:hover {
-    background-color: #04397D;
+
 }
