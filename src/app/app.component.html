@@ -27,11 +27,11 @@
 <div class="menu">
   <div class="menu__tool">
     <button class="button button-main"> {{ rus.home }} </button>
-    <button class="button button-menubar">Меню</button>
-    <button class="button button-bookmark">Закладка</button>
+    <button class="button button-menubar">{{ rus.menu }}</button>
+    <button class="button button-bookmark">{{ rus.bookmark }}</button>
   </div>
   <div class="menu__language">
-    <button class="button-right button-rus">
+    <button class="button-right button-rus" (click)="rus.retranslate()">
       <img src="/assets/rus.png" height="20" width="30" alt="rus">
     </button>
     <button class="button-right button-eng" (click)="rus.translate()">
