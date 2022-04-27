@@ -15,7 +15,7 @@ export class Buttonhome {
         this.bookmark = "Bookmarks";
     }
 
-    public retranslate () {
+    public retranslate() {
         this.home = "Главная";
         this.menu = "Меню";
         this.bookmark = "Закладки"
