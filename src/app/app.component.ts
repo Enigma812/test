@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Cat } from '../models/cat';
-import { Buttonhome } from '../models/buttonhome';
+import { Buttons } from '../models/buttons';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +11,11 @@ export class AppComponent {
   public name = 'test';
   public cat: Cat;
   public cat2: Cat;
-  public rus: Buttonhome;
+  public buttons: Buttons;
 
   constructor() {
       this.cat = new Cat('Мурка');
       this.cat2 = new Cat('Маруся');
-      this.rus = new Buttonhome();
+      this.buttons = new Buttons();
   }
 }
