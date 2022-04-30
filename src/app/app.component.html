@@ -26,8 +26,16 @@
 
 <div class="menu">
   <div class="menu__tool">
-    <button class="button button-main"> {{ buttons.home }} </button>
-    <button class="button button-menubar">{{ buttons.menu }}</button>
+    <button class="button button-main"> {{ buttons.home }}</button>
+    <button class="button button-menubar">{{ buttons.menu }}
+      <ul class="submenu">
+        <li><a href="">Личный кабинет</a></li>
+        <li><a href="">Фотогалерея</a></li>
+        <li><a href="">Форум</a></li>
+        <li><a href="">Поддержка</a></li>
+        <li><a href="">Карта сайта</a></li>
+      </ul>
+    </button>
     <button class="button button-bookmark">{{ buttons.bookmark }}</button>
   </div>
   <div class="menu__language">
@@ -38,11 +46,4 @@
       <img src="/assets/eng.png" height="20" width="30" alt="eng">
     </button>
   </div>
-</div>
-
-
-<div class="test">
-  <span>Тест</span>
-  <span>ntrc 2</span>
-  <!-- <div class="test__text">Тест</div> -->
 </div>

@@ -35,6 +35,7 @@
     height: 30px;
     width: 100px;
     border-style: none;
+    padding: 0;
     background-color: #878787;
     font-weight: bold;
     text-transform: uppercase;
@@ -42,6 +43,7 @@
     color: #d6d6d6;
     text-shadow: 1px 1px black;
     cursor: pointer;
+
     
     &:hover {
         background-color: #04397D;
@@ -64,22 +66,31 @@
     cursor: pointer;
 
 }
+ul {
+    padding: 0;
+    margin: 0;
 
-
-
-.test {
+}
+li {
+    // display: none;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 80px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: #d6d6d6;
-    color: black;
-    
-    &__text {
-        
-    }
+    height: 30px;
+    width: 150px;
+    list-style: none;
+    background-color: #878787;
+    text-align: left;
+}
+
+a {
+    height: 30px;
+    width: 150px;
+    padding-top: 10px;
+    color: #d6d6d6;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #04397D;
+
 }
