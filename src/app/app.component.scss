@@ -4,13 +4,22 @@
     height: 74px;
 
     &__items {
-        display: flex;
         height: 74px;
+        display: flex;
+        justify-content: space-between;
 
         &__logo {
             height: 50px;
             align-self: center;
             margin-left: 15px;
+        }
+
+        &__input{
+            height: 15px;
+            width: 200px;
+            align-self: flex-end;
+            padding: 0;
+            background-color: #c7c7c7;
         }
     }
 }
@@ -66,13 +75,21 @@
     cursor: pointer;
 
 }
+
+.button-menubar:hover .submenu {
+    display: flex;
+    flex-direction: column;
+}
+
 ul {
+    display: none;
     padding: 0;
+    padding-top: 7px;
     margin: 0;
+    position: absolute;
 
 }
 li {
-    // display: none;
     display: flex;
     align-items: center;
     height: 30px;
@@ -82,15 +99,13 @@ li {
     text-align: left;
 }
 
-a {
-    height: 30px;
-    width: 150px;
-    padding-top: 10px;
-    color: #d6d6d6;
-    text-decoration: none;
+li:hover {
+    background-color: #3d5677;
+
 }
 
-li:hover {
-    background-color: #04397D;
-
+a {
+    padding: 2px 0 0 5px;
+    color: #d6d6d6;
+    text-decoration: none;
 }

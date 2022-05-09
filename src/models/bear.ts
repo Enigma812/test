@@ -1,11 +1,11 @@
-import { Animal } from './animal';
+import { Animal } from "./animal";
 
-export class Cat extends Animal {
+export class Bear extends Animal {
     constructor(name: string) {
         super(name);
     }
 
     public override say(): string {
-        return 'Meaw';
+        return 'Grrr';
     }
 }

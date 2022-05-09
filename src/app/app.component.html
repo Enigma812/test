@@ -3,16 +3,37 @@
   <h3>Кошка</h3>
   <div>
     <span>Имя: {{ cat.name }}</span>
-    <button (click)="cat.rename(name)">Переименовать кошку</button>
+    <button (click)="cat.rename(name)">Переименовать кошку, которая говорит {{ cat.say() }}</button>
   </div>
 </div>
 
 <div>
   <h3>Кошкаff</h3>
   <div>
-    <span>Имя: {{ cat2.name }}</span>
-    <button (click)="cat2.rename(name)">Переименовать кошку</button>
+    <span>Имя: {{ dog.name }}</span>
+    <button (click)="dog.rename(name)">Переименовать собаку, которая говорит {{ dog.say() }} </button>
   </div>
+</div>
+
+<div> 
+  <h3>Наша банда:</h3>
+  <div *ngFor="let animal of band">
+    <span>Имя: {{ animal.name }}, которая говорит {{ animal.say() }}</span>
+  </div>
+</div>
+
+<div>
+  <h3>Functions</h3>
+  <table>
+    <tr>
+      <th>x</th>
+      <th>f(x)</th>
+    </tr>
+    <tr *ngFor="let x of numbers">
+      <td>{{ x }}</td>
+      <td>{{ f(x) }}</td>
+    </tr>
+  </table>
 </div>
 
 
@@ -21,6 +42,7 @@
     <div class="toolbar__items__logo">
       <img src="/assets/lg.png" width="115" height="50">
     </div>
+    <input class="toolbar__items__input" value="Поиск" />
   </div>
 </div>
 
@@ -47,3 +69,5 @@
     </button>
   </div>
 </div>
+
+<p>dsufweifmwiefmlkewfnlewkfnelwkfnwlfeknwflwknflewkfnwelkfnwle</p>
