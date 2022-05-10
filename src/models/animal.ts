@@ -1,5 +1,9 @@
+import { Mouth } from "./mouth";
+
 export abstract class Animal {
     public name: string;
+
+    protected abstract mouth: Mouth;
 
     constructor(name: string) {
         this.name = name;
@@ -9,5 +13,7 @@ export abstract class Animal {
         this.name = newName;
     }
 
-    public abstract say(): string;
+    public say(): string {
+        return this.mouth.say();
+    }
 }

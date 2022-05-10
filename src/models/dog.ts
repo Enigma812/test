@@ -6,7 +6,7 @@ export class Dog extends Animal {
     public color: string;
     public age: number;
 
-    private mouth: Mouth;
+    protected override mouth: Mouth;
 
     constructor(name: string) {
         super(name);
@@ -17,9 +17,5 @@ export class Dog extends Animal {
 
     public grow() {
         this.age = this.age + 1;
-    }
-
-    public override say(): string {
-        return this.mouth.say();
     }
 }
