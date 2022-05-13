@@ -35,6 +35,9 @@ function main(): number {
     const numbers: number[] = [0, 8];
     const strings: string[] = ['Hello', 'bye', 'fuck off!!!'];
 
+    const hello = strings[0];
+    const secondNumber = numbers[1]; // 0, 1, ... n-1
+
     // мутация
     numbers.push(0, 1, 2);
 
