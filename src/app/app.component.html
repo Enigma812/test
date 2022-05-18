@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div> 
+<div>
   <h3>Наша банда:</h3>
   <div *ngFor="let animal of band">
     <span>Имя: {{ animal.name }}, которая говорит {{ animal.say() }}</span>
@@ -42,7 +42,15 @@
     <div class="toolbar__items__logo">
       <img src="/assets/lg.png" width="115" height="50">
     </div>
-    <input class="toolbar__items__input" value="Поиск" />
+    <div class="toolbar__items__main">{{ mainName.mainName }}</div>
+    <div class="toolbar__items__rename">
+      <input class="toolbar__items__rename__input" [(ngModel)]="baseName"/>
+      <button class="toolbar__items__rename__button"
+      (click)="mainName.reMainName(baseName)"
+      >
+        <img src="../assets/icons/next.png" height="18" width="18" alt="enter"/>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -51,11 +59,11 @@
     <button class="button button-main"> {{ buttons.home }}</button>
     <button class="button button-menubar">{{ buttons.menu }}
       <ul class="submenu">
-        <li><a href="">Личный кабинет</a></li>
-        <li><a href="">Фотогалерея</a></li>
-        <li><a href="">Форум</a></li>
-        <li><a href="">Поддержка</a></li>
-        <li><a href="">Карта сайта</a></li>
+        <li><a href="">{{ buttons.account }}</a></li>
+        <li><a href="">{{ buttons.photo }}</a></li>
+        <button class="submenu__button">{{ buttons.ren }}</button>
+        <li><a href="">{{ buttons.help }}</a></li>
+        <li><a href="">{{ buttons.map }}</a></li>
       </ul>
     </button>
     <button class="button button-bookmark">{{ buttons.bookmark }}</button>
