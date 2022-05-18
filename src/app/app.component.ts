@@ -12,6 +12,7 @@ import { MainName } from 'src/models/rename';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
 
   public name: string = 'test';
@@ -22,6 +23,7 @@ export class AppComponent {
   public numbers: number[]
   public buttons: Buttons;
   public mainName: MainName;
+  public hide: boolean;
   
   
 
@@ -32,10 +34,17 @@ export class AppComponent {
     this.numbers = [1, 2, 3, 4, 5];
     this.buttons = new Buttons();
     this.mainName = new MainName('название');
+    this.hide = false;
   }
 
+  public hidden(): void {
+    this.hide = true;
+  }
+
+  
   public f(x: number): number {
     return f(x);
   }
   
+
 }
