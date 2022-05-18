@@ -23,7 +23,7 @@ export class AppComponent {
   public numbers: number[]
   public buttons: Buttons;
   public mainName: MainName;
-  public hide: boolean;
+  public isShown: boolean;
   
   
 
@@ -34,11 +34,17 @@ export class AppComponent {
     this.numbers = [1, 2, 3, 4, 5];
     this.buttons = new Buttons();
     this.mainName = new MainName('название');
-    this.hide = false;
+    this.isShown = false;
   }
 
-  public hidden(): void {
-    this.hide = true;
+  public show(): void {
+    this.isShown = true;
+  }
+
+
+  public rename(): void {
+    this.mainName.reMainName(this.baseName);
+    this.isShown = false;
   }
 
   

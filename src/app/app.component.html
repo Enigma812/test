@@ -43,12 +43,15 @@
       <img src="/assets/lg.png" width="115" height="50">
     </div>
     <div class="toolbar__items__main">{{ mainName.mainName }}</div>
-    <div *ngIf="hide" class="toolbar__items__rename">
+    <div *ngIf="isShown; else empty" class="toolbar__items__rename">
       <input class="toolbar__items__rename__input" [(ngModel)]="baseName" />
-      <button class="toolbar__items__rename__button" (click)="mainName.reMainName(baseName)">
+      <button class="toolbar__items__rename__button" (click)="rename()">
         <img src="../assets/icons/next.png" height="18" width="18" alt="enter" />
       </button>
     </div>
+    <ng-template #empty>
+      <div class="toolbar__items__rename"></div>
+    </ng-template>
   </div>
 </div>
 
@@ -59,7 +62,7 @@
       <ul class="submenu">
         <li><a href="">{{ buttons.account }}</a></li>
         <li><a href="">{{ buttons.photo }}</a></li>
-        <button class="submenu__button" (click)="hide.hidden()">
+        <button class="submenu__button" (click)="show()">
           {{ buttons.ren }}</button>
         <li><a href="">{{ buttons.help }}</a></li>
         <li><a href="">{{ buttons.map }}</a></li>
