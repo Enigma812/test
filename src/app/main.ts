@@ -1,9 +1,15 @@
-interface Person {
+import { Car } from "src/models/car";
+import { Dvz } from "src/models/dvz";
+import { Wheel } from "src/models/wheel";
+
+interface ISay {
+    say(what: string): string;
+}
+
+interface Person extends ISay {
     id: number;
     name: string;
     alive: boolean;
-
-    say(what: string): string
 }
 
 function main(): number {
@@ -132,7 +138,9 @@ function main(): number {
 
 
 
-
+    const car: Car = new Car(new Dvz(0.03), [new Wheel(0.5), new Wheel(0.7)]);
+    car.go(3);
+    console.log(car.velocity);
 
     return 0;
 }
